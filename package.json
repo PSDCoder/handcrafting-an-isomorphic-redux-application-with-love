@@ -1,0 +1,35 @@
+{
+  "name": "react-isomorphic-redux",
+  "version": "0.0.1",
+  "description": "Isomorphic redux app",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_PATH=$NODE_PATH:./shared node --harmony .",
+    "dev": "npm run start & webpack-dev-server --progress --color",
+    "build": "NODE_ENV=production webpack --progress --color -p --config webpack.prod.config.js"
+  },
+  "author": "Pavel Grinchenko <psdcoder@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.5.4",
+    "express": "^4.13.3",
+    "history": "^1.9.1",
+    "immutable": "^3.7.5",
+    "lodash": "3.10.1",
+    "object-assign": "^4.0.1",
+    "react": "^0.13.3",
+    "react-redux": "^2.1.2",
+    "react-router": "1.0.0-rc1",
+    "redux": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.2",
+    "babel-loader": "^5.3.2",
+    "eslint": "^1.4.3",
+    "eslint-plugin-react": "^3.3.2",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.11.0"
+  }
+}

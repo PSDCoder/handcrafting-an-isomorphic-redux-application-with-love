@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Isomorphic Redux Demo</title>
+</head>
+<body>
+    <script id="initial-state">
+        window.__INITIAL_STATE__ = <%= initialState %>;
+    </script>
+    <div id="react-view"><%= componentHTML %></div>
+    <script type="application/javascript" src="/bundle.js"></script>
+</body>
+</html>
